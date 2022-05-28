@@ -11,7 +11,8 @@ import io.cucumber.testng.CucumberOptions;
 					plugin= {"pretty","html:target/cucumber-reports/cucumber.html",
 					"json:target/cucumber-reports/cucumber.json" }, 
 					tags="@EmptyPassword or @ValidLogin or @RememberMe or @ForgotPassword or @InvalidCredentials"
-					)
+				//	tags="@ForgotPassword or @InvalidCredentials"			
+		)
 
 public class Runner extends AbstractTestNGCucumberTests {
 

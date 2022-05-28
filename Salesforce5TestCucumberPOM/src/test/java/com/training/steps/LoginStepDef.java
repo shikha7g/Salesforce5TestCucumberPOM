@@ -113,19 +113,24 @@ public class LoginStepDef {
 	   Assert.assertEquals(actual, expectedTitle);
 	}
 	@Then("user click on continue button and message displayed is {string}")
-	public void user_click_on_continue_button_and_message_displayed_is(String expectedMsg) {
+	public void user_click_on_continue_button_and_message_displayed_is(String expectedMsg) throws InterruptedException {
+		Thread.sleep(5000);
 		String actualMsg=forgotpassword.clickContinueButton();
+		Thread.sleep(5000);
+	//	expectedMsg="";
 		Assert.assertEquals(actualMsg, expectedMsg);
 	}
 
 
 	@Then("user enters {string} in username")
 	public void user_enters_in_username(String username) {
+		
 	    forgotpassword.enterUsername(username);
 	}
 
 	@Then("validate error msg displayed as {string};")
-	public void validate_error_msg_displayed_as(String expectedMsg) {
+	public void validate_error_msg_displayed_as(String expectedMsg) throws InterruptedException {
+		Thread.sleep(5000);
 	   String actual= login.getErrorMsg();
 	   Assert.assertEquals(actual, expectedMsg);
 	}
