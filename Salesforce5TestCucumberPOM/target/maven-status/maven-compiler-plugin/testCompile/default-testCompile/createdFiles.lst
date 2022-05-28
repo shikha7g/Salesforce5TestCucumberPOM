@@ -1,0 +1,5 @@
+com\training\runner\Runner.class
+com\training\steps\LoginStepDef.class
+com\salesforce\pages\homepages\HomePage.class
+com\salesforce\pages\loginpages\LoginPage.class
+com\salesforce\pages\loginpages\ForgotPassword.class
